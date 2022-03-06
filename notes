@@ -8,6 +8,7 @@ Exercise
     belongs to :Workout
         :workout_id - integer
         :name - string
+        :muscle_group - MUST BE (Chest, Back, Shoulders, Legs, Tricep, Bicep, Abs)
         :weight - integer
         :reps - integer
         :sets - integer
