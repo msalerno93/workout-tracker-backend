@@ -1,0 +1,14 @@
+Workouts
+    has many :Exercises
+        :title - string
+        :date - datetime
+        :workout_note - string
+
+Exercise
+    belongs to :Workout
+        :workout_id - integer
+        :name - string
+        :weight - integer
+        :reps - integer
+        :sets - integer
+        :exercise_note - string
