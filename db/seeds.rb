@@ -5,3 +5,8 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+
+workout = Workout.create(title: 'Chest/Triceps', date: Date.today, workout_note: 'This was a great workout!')
+
+exercise = Exercise.create(workout_id: 1, name: 'Chest Press', muscle_group: 'Other', weight: 225, reps: 8, sets: 4, exercise_note: 'Awesome Chest Workout!')
