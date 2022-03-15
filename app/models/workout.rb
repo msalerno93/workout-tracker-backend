@@ -1,4 +1,4 @@
 class Workout < ApplicationRecord
     has_many :exercises
-    validates :title, :date, presence: true
+    validates :title, presence: true
 end

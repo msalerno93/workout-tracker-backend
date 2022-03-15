@@ -26,7 +26,7 @@ ActiveRecord::Schema.define(version: 2022_03_06_040156) do
 
   create_table "workouts", force: :cascade do |t|
     t.string "title"
-    t.datetime "date"
+    t.string "date"
     t.string "workout_note"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
