@@ -21,7 +21,7 @@ class Api::V1::WorkoutsController < ApplicationController
 
     def destroy
         @workout = Workout.find(params[:id])
-        @workout.destory
+        @workout.destroy
     end
 
 
