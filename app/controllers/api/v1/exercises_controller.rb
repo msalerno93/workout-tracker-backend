@@ -21,6 +21,15 @@ class Api::V1::ExercisesController < ApplicationController
         render json: @exercise
     end
 
+    def update
+        @exercise = @workout.exercises.find_by(id: params[:id])
+        if @exercise.update(exercise_params)
+            render json: @exercise
+        else
+            render json: {error: 'Error Editing Exercise'}
+        end
+    end
+
     def destroy
         @exercise = @workout.exercises.find_by(id: params[:id])
         @exercise.destroy
